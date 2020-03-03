@@ -6,7 +6,7 @@ let dbUrl = '';
 if (process.env.NODE_ENV === 'test') {
   dbUrl = process.env.TEST_DB_URL;
 } else if (process.env.NODE_ENV === 'production') {
-  dbUrl = process.env.HUROKO_URL;
+  dbUrl = process.env.DATABASE_URL;
 } else {
   dbUrl = process.env.DB_URL;
 }
